@@ -1,0 +1,7 @@
+# Build rule
+%: %.cpp
+	g++ -std=c++17 -O2 $< -o $@
+
+# Run rule: `make run file=hello`
+run:
+	./$(file)
